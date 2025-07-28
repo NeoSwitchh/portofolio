@@ -1,3 +1,4 @@
+'use client'
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -24,11 +25,11 @@ export const Navbar = () => {
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Image
                   alt="NS logo"
-                  height={10}
-                  src="@/public/android-icon-192x192.png"
-                  width={10}
+                  height={40}
+                  width={40}
+                  src="/android-icon-192x192.png"
+                  loading="eager"
             />
-            <p className="font-bold text-inherit">NeoSwitchh</p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
