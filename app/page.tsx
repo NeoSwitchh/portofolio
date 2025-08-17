@@ -1,19 +1,31 @@
 "use client";
 import { Image } from "@heroui/image";
 import { Typewriter } from "react-simple-typewriter";
+import Techstack from "@/components/techstack";
+import Workexp from "@/components/workexp";
+import About from "@/components/about";
 
 export default function HomePage() {
 	return (
-		<section className="flex flex-col items-start justify-start gap-4 py-8 md:py-10">
-			<div className="grid grid-cols-2 w-full text-start justify-center">
-				<div className="items-center justify-self-start">
-					<h1 className="text-9xl">Hi!👋</h1>
+		<section className="flex flex-col gap-4 py-8 md:py-10">
+			<div className="grid grid-cols-3 w-full text-start justify-center">
+				<div className="place-content-center col-span-3 md:col-span-2">
+					<div className="block md:hidden justify-items-center">
+						<Image
+							isBlurred
+							alt="HeroUI Album Cover"
+							className="m-5"
+							src="/meButInACircle.png"
+							width={300}
+						/>
+					</div>
+					<h1 className="font-bold text-8xl">Hi!👋</h1>
 					<p className="text-4xl">I'm Abiyyu Dzaky Muhammad</p>
 					<p className="text-xl">
-						Your backend developer who is passionate in building systems that{" "}
+						A full-stack developer passionate about building systems that{" "}
 						<span className="w-full">
 							<Typewriter
-								words={[" is secure.", " is optimized.", " matter."]}
+								words={[" are secure.", " are optimized.", " matter."]}
 								loop={5}
 								cursor
 								typeSpeed={70}
@@ -23,7 +35,7 @@ export default function HomePage() {
 						</span>
 					</p>
 				</div>
-				<div className="justify-self-end">
+				<div className="hidden md:block">
 					<Image
 						isBlurred
 						alt="HeroUI Album Cover"
@@ -33,20 +45,9 @@ export default function HomePage() {
 					/>
 				</div>
 			</div>
-			<div>
-				<h2>About</h2>
-				<p>
-					With hands-on experience developing scalable Laravel-based web
-					applications and secure REST APIs, I've built backend solutions for
-					educational institutions — from localized content management to admin
-					dashboards that empower users. I specialize in SQL-driven data
-					structures, robust user authentication, and clean, maintainable code
-					under version control with Git. <br />
-					Beyond the code, I care deeply about secure system architecture,
-					performance, and continuous improvement. I'm always eager to learn,
-					grow, and tackle new challenges.
-				</p>
-			</div>
+			<About />
+			<Techstack />
+			{/* <Workexp /> */}
 		</section>
 	);
 }
