@@ -6,7 +6,7 @@ const techStack = [
 	},
 	{
 		heading: "Frameworks/Libraries",
-		items: ["Laravel", "Flutter", "ReactJS", "NextJS", ".NET WinForm"],
+		items: ["Laravel", "Flask", "Flutter", "ReactJS", "NextJS", ".NET WinForm"],
 	},
 	{
 		heading: "Databases",
@@ -14,7 +14,7 @@ const techStack = [
 	},
 	{
 		heading: "Web Tools",
-		items: ["Wordpress", "Tailwind CSS", "BootstrapCSS", "Sass/SCSS"],
+		items: ["Wordpress", "Tailwind CSS", "BootstrapCSS", "Sass/SCSS", "JWT"],
 	},
 	{
 		heading: "Other",
