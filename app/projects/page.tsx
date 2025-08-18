@@ -1,9 +1,9 @@
-import { title } from "@/components/primitives";
+import Projects from "@/components/projects";
 
 export default function ProjectsPage() {
-  return (
-    <div>
-      <h1 className={title()}>Projects</h1>
-    </div>
-  );
+	return (
+		<div>
+			<Projects />
+		</div>
+	);
 }

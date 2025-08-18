@@ -6,11 +6,20 @@ const techStack = [
 	},
 	{
 		heading: "Frameworks/Libraries",
-		items: ["Laravel", "Flask", "Flutter", "ReactJS", "NextJS", ".NET WinForm"],
+		items: [
+			"Laravel",
+			"Flask",
+			"Flutter",
+			"ReactJS",
+			"NextJS",
+			".NET WinForm",
+			"Express.js",
+			"NodeJS",
+		],
 	},
 	{
 		heading: "Databases",
-		items: ["MySQL/MariaDB", "PostgreSQL", "MSSQL", "MongoDB"],
+		items: ["MySQL/MariaDB", "PostgreSQL", "MSSQL/SSMS", "MongoDB"],
 	},
 	{
 		heading: "Web Tools",

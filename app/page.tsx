@@ -38,7 +38,7 @@ export default function HomePage() {
 						</span>
 					</p>
 				</div>
-				<div className="hidden md:block">
+				<div className="hidden md:block justify-items-end">
 					<Image
 						isBlurred
 						alt="HeroUI Album Cover"
