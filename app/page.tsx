@@ -5,6 +5,7 @@ import Techstack from "@/components/techstack";
 import Workexp from "@/components/workexp";
 import About from "@/components/about";
 import Education from "@/components/education";
+import Certification from "@/components/certification";
 
 export default function HomePage() {
 	return (
@@ -51,6 +52,7 @@ export default function HomePage() {
 			<Techstack />
 			<Workexp />
 			<Education />
+			<Certification />
 		</section>
 	);
 }
