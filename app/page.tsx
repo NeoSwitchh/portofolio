@@ -4,6 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Techstack from "@/components/techstack";
 import Workexp from "@/components/workexp";
 import About from "@/components/about";
+import Education from "@/components/education";
 
 export default function HomePage() {
 	return (
@@ -49,6 +50,7 @@ export default function HomePage() {
 			<About />
 			<Techstack />
 			<Workexp />
+			<Education />
 		</section>
 	);
 }
