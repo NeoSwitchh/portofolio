@@ -27,7 +27,15 @@ const techStack = [
 	},
 	{
 		heading: "Other",
-		items: ["Git", "Docker", "Vercel", "Postman", "Figma", "Blynk"],
+		items: [
+			"Git",
+			"Docker",
+			"Vercel",
+			"Postman",
+			"Figma",
+			"Blynk",
+			"Arduino/ESP32",
+		],
 	},
 	{
 		heading: "AI/ML",
