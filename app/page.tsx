@@ -12,6 +12,7 @@ export default function HomePage() {
 				<div className="place-content-center col-span-3 md:col-span-2">
 					<div className="block md:hidden justify-items-center">
 						<Image
+							removeWrapper
 							isBlurred
 							alt="HeroUI Album Cover"
 							className="m-5"
@@ -47,7 +48,7 @@ export default function HomePage() {
 			</div>
 			<About />
 			<Techstack />
-			{/* <Workexp /> */}
+			<Workexp />
 		</section>
 	);
 }
