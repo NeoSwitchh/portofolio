@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
+import { Button } from "@heroui/button";
 import { Chip } from "@heroui/chip";
 
 const projects = [
@@ -7,42 +8,88 @@ const projects = [
 		desc: "Developed a simulated online banking system with secure login, account management, and fund transfer features. Built the backend RESTful API using Laravel 9 and implemented robust database transaction handling. Coordinated team workflow, project documentation, and GitHub project board for efficient collaboration.",
 		proType: "Team Project",
 		stack: ["Laravel 9", "MySQL"],
+		buttons: [
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/NeoSwitchh/minibank",
+			},
+		],
 	},
 	{
 		proHeading: "SQL Reader",
 		desc: "Created a desktop application to view, edit, and manage SQL database tables. Designed an intuitive UI supporting CRUD operations, table selection, and real-time data previews.",
 		proType: "Individual Project",
 		stack: ["C#", "WinForm"],
+		buttons: [
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/NeoSwitchh/SQLreader",
+			},
+		],
 	},
 	{
 		proHeading: "Fashion Campus API",
 		desc: "Engineered the backend system for a Startup Campus e-commerce platform. Designed and implemented RESTful APIs for authentication, product catalog, search, image retrieval, banners, categories, cart management, orders, and user profiles. Built admin dashboards with order and sales tracking endpoints, deployed via Docker, and managed dependencies with Composer.",
 		proType: "Team Project",
 		stack: ["Laravel", "MySQL", "Docker", "Composer", "REST API"],
+		buttons: [
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/fatihabdi/Final-Project-Joko-Kendil-Startup-Campus",
+			},
+		],
 	},
 	{
 		proHeading: "Personal Website",
 		desc: "Built a responsive portfolio website to showcase projects, skills, and work experience. Implemented dynamic routing, smooth animations, and reusable components for scalability. Deployed on Vercel with CI/CD pipelines for automated builds and seamless updates.",
 		proType: "Individual Project",
 		stack: ["NextJS", "Vercel"],
+		buttons: [
+			{
+				buttonHeading: "Visit Site",
+				href: "https://portofolio-nu-three.vercel.app/",
+			},
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/NeoSwitchh/portofolio",
+			},
+		],
 	},
 	{
 		proHeading: "DeepFaceRecognitionNTRU",
 		desc: "Implemented a deep learning model integrating facial recognition with cryptographic key generation. Leveraged DenseNet121 for feature extraction from the UTKFace dataset and applied outputs to generate NTRU key pairs. Explored the intersection of biometric authentication and lattice-based cryptography for enhanced security.",
 		proType: "Research / Individual Project",
 		stack: ["Python", "Keras", "TensorFlow", "DenseNet121", "Scikit-learn"],
+		buttons: [
+			{
+				buttonHeading: "Kaggle Notebook",
+				href: "https://www.kaggle.com/code/abiyyudzakymuhammad/deepfacerecognitionntru",
+			},
+		],
 	},
 	{
 		proHeading: "EEG Emotion Recognition",
 		desc: "Developed a recurrent neural network to predict emotional states from EEG signals collected during movie-watching experiments. Preprocessed and analyzed brainwave data, performed model training with TensorFlow, and evaluated performance using classification metrics. Showcased the application of deep learning in affective computing and brain–computer interface research.",
 		proType: "Research / Individual Project",
 		stack: ["Python", "TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy"],
+		buttons: [
+			{
+				buttonHeading: "Kaggle Notebook",
+				href: "https://www.kaggle.com/code/abiyyudzakymuhammad/neo-eegemotionrecog",
+			},
+		],
 	},
 	{
 		proHeading: "Indonesian Song Emotion Detection",
 		desc: "Designed an NLP model using IndoBERT to classify emotions in Indonesian song lyrics. Trained and evaluated the model on a crowd-labeled dataset, applying transfer learning to improve accuracy. Demonstrated the potential of transformer-based architectures for understanding cultural and linguistic nuances in music.",
 		proType: "Research / Team Project",
 		stack: ["Python", "IndoBERT", "TensorFlow", "Scikit-learn", "Pandas"],
+		buttons: [
+			{
+				buttonHeading: "Kaggle Notebook",
+				href: "https://www.kaggle.com/code/stackofsugar/indonesian-song-emotion-detection",
+			},
+		],
 	},
 ];
 
@@ -59,6 +106,17 @@ const Projects = () => {
 									{item.proHeading}
 								</h4>
 								<p className="text-small text-default-400">{item.proType}</p>
+								<div>
+									{item.stack.map((tech, j) => (
+										<Chip
+											key={j}
+											size="sm"
+											className="bg-tangelo-500 text-white mr-2"
+										>
+											{tech}
+										</Chip>
+									))}
+								</div>
 							</div>
 						</CardHeader>
 
@@ -67,11 +125,25 @@ const Projects = () => {
 						</CardBody>
 
 						<CardFooter className="flex flex-wrap gap-2">
-							{item.stack.map((tech, j) => (
-								<Chip key={j} size="sm" className="bg-tangelo-500 text-white">
-									{tech}
-								</Chip>
-							))}
+							{item.buttons.map(
+								(btn, i) =>
+									btn.buttonHeading &&
+									btn.href && (
+										<Button
+											key={i}
+											as="a"
+											href={btn.href}
+											target="_blank"
+											rel="noopener noreferrer"
+											color="primary"
+											variant="bordered"
+											size="sm"
+											className="rounded-xl border-tangelo-500 text-tangelo-500"
+										>
+											{btn.buttonHeading}
+										</Button>
+									)
+							)}
 						</CardFooter>
 					</Card>
 				))}
