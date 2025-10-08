@@ -8,7 +8,7 @@ const workExp = [
 			"Created interactive data dashboards using Apache Superset to support business analytics and decision-making.",
 			"Built and integrated BIRT reports with K-System to automate report generation and streamline business reporting processes.",
 		],
-		start: "03/2024",
+		start: "09/2025",
 		end: "Present",
 		location: "Nusantara Sakti Group",
 		stack: ["BIRT", "Apache Superset", "K-System", "K-Lang", "ERP"],
