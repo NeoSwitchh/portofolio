@@ -11,7 +11,7 @@ const workExp = [
 		start: "09/2025",
 		end: "Present",
 		location: "Nusantara Sakti Group",
-		stack: ["BIRT", "Apache Superset", "K-System", "K-Lang", "ERP"],
+		stack: ["BIRT", "Apache Superset", "K-System", "K-Lang", "ERP", "Linux"],
 	},
 	{
 		jobHeading: "Fullstack Web Developer",
