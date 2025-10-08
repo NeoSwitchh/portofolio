@@ -4,6 +4,35 @@ import { Chip } from "@heroui/chip";
 
 const projects = [
 	{
+		proHeading: "NeoSwitchh Web Server",
+		desc: "Developed a lightweight, modular web server from scratch with a focus on flexibility and performance. Implemented a custom application-level protocol for efficient client-server communication, enabling structured message handling and extensible command formats. Added routing, static file serving, middleware hooks, and concurrency support to handle dynamic endpoints and API requests.",
+		proType: "Personal / Open-Source Project",
+		stack: ["Python", "Socket", "Custom Protocol", "HTTP Server"],
+		buttons: [
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/NeoSwitchh/NeoSwitchh-WebServer",
+			},
+		],
+	},
+	{
+		proHeading: "Klang-Support (VSCode Extension)",
+		desc: "Created a Visual Studio Code extension for syntax highlighting of Klang (K-System) source files. Implemented grammar rules, semantic scopes, file-association logic, and theme adaptation for functions, keywords, constants, comments, and UI definitions.",
+		proType: "Personal / Open-Source Project",
+		stack: [
+			"TypeScript",
+			"JavaScript",
+			"VSCode Extension API",
+			"TextMate Grammar",
+		],
+		buttons: [
+			{
+				buttonHeading: "GitHub",
+				href: "https://github.com/NeoSwitchh/klang-support",
+			},
+		],
+	},
+	{
 		proHeading: "Minibank",
 		desc: "Developed a simulated online banking system with secure login, account management, and fund transfer features. Built the backend RESTful API using Laravel 9 and implemented robust database transaction handling. Coordinated team workflow, project documentation, and GitHub project board for efficient collaboration.",
 		proType: "Team Project",
