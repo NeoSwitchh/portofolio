@@ -1,6 +1,19 @@
 import { Chip } from "@heroui/chip";
 const workExp = [
 	{
+		jobHeading: "Programmer Junior",
+		jobType: "Full Time",
+		desc: [
+			"Developed and maintained ERP modules on a legacy system using K-System, a proprietary ERP platform built with K-Lang, its dedicated programming language.",
+			"Created interactive data dashboards using Apache Superset to support business analytics and decision-making.",
+			"Built and integrated BIRT reports with K-System to automate report generation and streamline business reporting processes.",
+		],
+		start: "03/2024",
+		end: "Present",
+		location: "Nusantara Sakti Group",
+		stack: ["BIRT", "Apache Superset", "K-System", "K-Lang", "ERP"],
+	},
+	{
 		jobHeading: "Fullstack Web Developer",
 		jobType: "Contract",
 		desc: [
