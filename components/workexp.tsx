@@ -1,6 +1,29 @@
 import { Chip } from "@heroui/chip";
 const workExp = [
 	{
+		jobHeading: "Full-Stack Developer",
+		jobType: "Full Time",
+		desc: [
+			"Powering a national-level enterprise website (Isuzu) with 10+ production features using Laravel + Filament, supporting thousands of monthly users",
+			"Cut development & content management time by ~40% by creating reusable backend components and structured admin panels",
+			"Improved UI consistency and page performance with Tailwind CSS",
+			"Delivered end-to-end features (backend → frontend)",
+		],
+		start: "09/2025",
+		end: "Present",
+		location: "PT Deptech Digital Indonesia",
+		stack: [
+			"PHP",
+			"JS",
+			"NodeJS",
+			"Laravel",
+			"Tailwind",
+			"MySQL",
+			"Laravel",
+			"Filament",
+		],
+	},
+	{
 		jobHeading: "Programmer Junior",
 		jobType: "Full Time",
 		desc: [
@@ -9,7 +32,7 @@ const workExp = [
 			"Built and integrated BIRT reports with K-System to automate report generation and streamline business reporting processes.",
 		],
 		start: "09/2025",
-		end: "Present",
+		end: "11/2025",
 		location: "Nusantara Sakti Group",
 		stack: ["BIRT", "Apache Superset", "K-System", "K-Lang", "ERP", "Linux"],
 	},
@@ -27,7 +50,7 @@ const workExp = [
 	},
 	{
 		jobHeading: "Wordpress Developer",
-		jobType: "Contract",
+		jobType: "Internship",
 		desc: [
 			"Developed dynamic and visually engaging profile websites for multiple academic departments using WordPress, improving online presence and accessibility.",
 			"Enhanced website security and performance through custom configurations and the strategic use of security plugins, ensuring a zero-intrusion record during deployment.",
@@ -39,7 +62,7 @@ const workExp = [
 	},
 	{
 		jobHeading: "Fullstack Web Developer",
-		jobType: "Contract",
+		jobType: "Internship",
 		desc: [
 			"Built and deployed multilingual web content for https://risnov.uns.ac.id using Laravel 8.",
 			"Engineered data interface module for RIDA project, handling dynamic content rendering and filtering.",
